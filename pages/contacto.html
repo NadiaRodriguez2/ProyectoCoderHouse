@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-
+   <!-- CSS Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!--Mi CSS -->
+   <link rel="stylesheet" href="../css/styles.css">
+   <!--Google Fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>Code4</title>
 </head>
+
 <body>
     <header>
         <div class="headerCode4">
@@ -25,67 +30,112 @@
         </nav>
         </div>
     </header>
-    </header>
+    
 
     <main>
         <section>
-            <!--subheader-->
-            <img src="../lib/headerCode4.jpg" alt="Header de Code4"  > <!--tamaño-->
-            <h1>¿Quieres contactarnos?</h1>
+            <div class="subheaderContacto">
+                <!--subheader-->
+                <img class="imgContHeader" src="../lib/headerCode.jpg" alt="Header de Contacto"  > 
+                <h1>¿Quiéres contactárnos?</h1>
+            </div>
         </section>
         
         
+        <div class="mainContacto">
         <section>
+            
             <!--FORMULARIO-->
-            <form action="DBConnection">
-                    <fieldset>
-                        <legend>Envianos un mensaje. <br> Le responderemos a la brevedad.</legend> 
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Dejanos tu mensaje!</legend>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Deja aquí tu mensaje y te contactaremos." rows="7"></textarea>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-danger btn-lg">Enviar mensaje</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
-                        <div>
-                            <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto">
-                        </div>
-                        <div>
-                            <label for="mail">Mail</label>
-                            <input type="text" id="mail">
-                        </div>
-                        <div>
-                            <label for="mensaje">Mensaje</label>
-                            <input type="text" id="mensaje">
-                        </div>
-                        <div>
-                            <input type="submit">
-                            <input type="reset">
-                        </div>
-                    </fieldset>
-            </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
             <!--mapa-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.086757150184!2d-56.076980912717325!3d-34.87916768632554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1661457742180!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-
+    </div>
     </main>
 
     <footer>
-        <p class="footer">CODE4 © 2022 Todos los derechos reservados.</p>
+        <div class="footerCode4">
+            <div class="derReserv">
+                <p class="footer">CODE4 © 2022 Todos los derechos reservados.</p>
+            </div>
         <!--Redes-->
-        <a href="https://www.youtube.com" target="_blank"><img class="logo" src="lib/youtube.png" alt="Youtube"></a>
-        <a href="https://www.twitter.com" target="_blank"><img class="logo" src="lib/twitter.png" alt="Twitter"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img class="logo" src="lib/linkedin.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com" target="_blank"><img class="logo" src="lib/instagram.png" alt="Instagram"></a>
-
+            <div class="redes">
+                <a href="https://www.youtube.com" target="_blank"><img class="logoRrss" src="../lib/youtube.png" alt="Youtube"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="logoRrss" src="../lib/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="logoRrss" src="../lib/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="logoRrss" src="../lib/instagram.png" alt="Instagram"></a>
+            </div>
         <br>
 
         <!--info de contacto-->
-        <img class= "logoFooter" src="lib/location.png" alt="Location"> <p class="footer">Av.Italia 6201 (LATU) Edif. Los Sauces.
-            Montevideo, Uruguay</p>
-            <img class= "logoFooter" src="lib/phone.png" alt="Telefono"><p class="footer">Teléfono/Whatsapp: (598) 99 000 000</p>
-            <img class= "logoFooter" src="lib/mail.png" alt="Mail"><p class="footer">info@code4.com.uy</p>
+            <div class="info">  
+                <div class="infofoot">
+                     <img class= "logoFooter" src="../lib/location.png" alt="Location"> <p class="footer">Av.Italia 6201 (LATU) Edif. Los Sauces.
+                        Montevideo, Uruguay</p>
+                </div>
+                <div class="infofoot">
+                     <img class= "logoFooter" src="../lib/phone.png" alt="Telefono"><p class="footer">Teléfono/Whatsapp: (598) 99 000 000</p>
+                </div>
+                <div class="infofoot">
+                <img class= "logoFooter" src="../lib/mail.png" alt="Mail"><p class="footer">info@code4.com.uy</p>
+                </div>
+            </div>
+        </div>  
     </footer>
 </body>
 </html>

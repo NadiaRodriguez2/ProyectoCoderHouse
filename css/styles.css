@@ -41,7 +41,7 @@
 .headerCode4 nav ul li a{
     
     list-style: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Roboto' , serif;
     font-size: 150%;
     column-gap: 5%;
     box-shadow: 2px 2px 5px;
@@ -50,21 +50,150 @@
 }
 
 
-
-
 /*main*/
+h1 {
+    font-size: 500%;
+    font-family: 'Roboto' , serif;
+    color: white;
+    font-weight: bold;
+    margin-left: 2%;
+}
 
 h2 {
     font-size: 200%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto' , serif;
     text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 170%;
+    font-family: 'Roboto' , serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 120%;
+    font-family: 'Roboto' , serif;
+}
+
+/*index*/
+
+.indexCarousel{
+    height: 70%;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+/*agrosoft*/
+.subheaderAgrosoft {
+    display: grid;
+    grid-template: 10% / 100%;
+}
+
+.imgAgroHeader {
+    display: grid;
+    width: 100%;
+}
+
+.mainAgro {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.agroCarousel {
+    height: 70%;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 
 
+.agroHQ {
+    grid-column: 1;
+}
 
 
+/*code4*/
+.subheaderCode {
+    display: grid;
+    grid-template: 10% / 100%;
+}
 
+.imgCodeHeader {
+    display: grid;
+    width: 100%;
+}
+
+.mainCode {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+/*UTEC*/
+.subheaderUTEC {
+    display: grid;
+    grid-template: 10% / 100%;
+}
+
+.imgUTECHeader {
+    display: grid;
+    width: 100%;
+}
+
+.mainUtec {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+/*contacto*/
+.subheaderContacto {
+    display: grid;
+    grid-template: 10% / 100%;
+}
+
+.imgContHeader {
+    display: grid;
+    width: 100%;
+}
+
+.mainContacto {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    color: red;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: red;
+}
 
 
 
