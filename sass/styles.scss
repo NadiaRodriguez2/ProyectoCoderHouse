@@ -1,0 +1,16 @@
+
+//imports
+@import "utilities/variables";
+@import "utilities/header";
+
+//scss padre
+
+*{
+    @extend %reset;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+}

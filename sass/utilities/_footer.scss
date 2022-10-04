@@ -1,0 +1,52 @@
+@import "variables";
+
+footer {
+    background-color: $bg-color;
+    .footer {
+        font-size: 80%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .footercode4 {
+        grid-area: footer;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-areas: "derReserv" "redes" "info";
+        .derReserv {
+            grid-area: derReserv;
+            display: flex;   
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .redes{
+            grid-area: redes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .logoRrss {
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .info {
+            grid-area: info;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            .infofoot {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                .logoFooter {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

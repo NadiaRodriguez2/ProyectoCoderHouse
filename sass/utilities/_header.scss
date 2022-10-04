@@ -1,0 +1,41 @@
+@import "variables";
+
+
+header {
+    .headerCode4 {
+        grid-area: header;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "headerUno" "headerDos";
+        background-color: $bg-color;
+        img {
+            grid-area: headerUno;
+            display: flex;
+            justify-content: center;
+            object-fit: contain;
+        }
+        nav ul{
+            grid-area: headerDos;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 10%;
+            align-items: center;
+            list-style: none;
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    list-style: none;
+                    font-family: $font-fam;
+                    font-size: 150%;
+                    column-gap: 5%;
+                    box-shadow: 2px 2px 5px;
+                    text-decoration:none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
