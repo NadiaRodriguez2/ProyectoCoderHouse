@@ -141,16 +141,13 @@ p {
 .footercode4 {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-areas: "derReserv" "redes" "info";
+  grid-template-columns: 35% 30% 35%;
   background-color: #d80016; }
   .footercode4 .derReserv {
-    grid-area: derReserv;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end; }
   .footercode4 .redes {
-    grid-area: redes;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +157,6 @@ p {
       height: 45px;
       width: 45px; }
   .footercode4 .info {
-    grid-area: info;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -194,7 +190,7 @@ p {
 
 .mainCode {
   margin-right: 10%;
-  margin-right: 10%;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;

@@ -1,21 +1,19 @@
 @import "variables";
 @import "reset";
+
    
         .footercode4 {
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 2fr 2fr 2fr;
-            grid-template-areas: "derReserv" "redes" "info";
+            grid-template-columns: 35% 30% 35%;
             background-color: $bg-color;
             .derReserv {
-                grid-area: derReserv;
                 display: flex;   
                 justify-content: flex-start;
                 align-items: flex-end;
                 @extend %foot-font;
             }
             .redes{
-                grid-area: redes;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -28,7 +26,6 @@
                 }
             }
             .info {
-                grid-area: info;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
