@@ -1,41 +1,80 @@
 @import "variables";
-
-
 header {
+    @extend %reset;
+}
+/*
+.headerCode4 {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    img {
+        display: flex;
+        justify-content: flex-start;
+        object-fit: contain;
+        overflow: hidden;
+        height: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap: 10%;
+        align-items: center;
+        list-style: none;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                list-style: none;
+                font-family: $font-fam;
+                font-size: 150%;
+                column-gap: 5%;
+                box-shadow: 2px 2px 5px;
+                text-decoration:none;
+                color: white;
+            }
+        }
+    }
+}
+*/
+
+//intento con grid//
     .headerCode4 {
         grid-area: header;
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 2fr 2fr;
-        grid-template-areas: "headerUno" "headerDos";
+        grid-template-columns: 1fr 1fr;
         background-color: $bg-color;
         img {
-            grid-area: headerUno;
             display: flex;
             justify-content: center;
             object-fit: contain;
+            
         }
-        nav ul{
-            grid-area: headerDos;
+        nav {
+            ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
             column-gap: 10%;
             align-items: center;
             list-style: none;
-            li {
-                display: flex;
-                flex-wrap: wrap;
-                a{
-                    list-style: none;
-                    font-family: $font-fam;
-                    font-size: 150%;
-                    column-gap: 5%;
-                    box-shadow: 2px 2px 5px;
-                    text-decoration:none;
-                    color: white;
+                li {
+                    display: flex;
+                    flex-wrap: wrap;
+                    a{
+                        list-style: none;
+                        font-family: $font-fam;
+                        font-size: 150%;
+                        column-gap: 5%;
+                        box-shadow: 2px 2px 5px;
+                        text-decoration:none;
+                        color: white;
+                    }
                 }
             }
         }
     }
-}

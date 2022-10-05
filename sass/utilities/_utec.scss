@@ -1,5 +1,6 @@
-@import "utilities/variables";
-@import "utilities/header";
+@import "variables";
+@import "header";
+@import "footer";
 
 h1 {
     @extend %h1-font;

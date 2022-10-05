@@ -2,6 +2,12 @@
 //imports
 @import "utilities/variables";
 @import "utilities/header";
+@import "utilities/footer";
+@import "utilities/index";
+@import "utilities/agrosoft";
+@import "utilities/codeFour";
+@import "utilities/utec";
+@import "utilities/contacto";
 
 //scss padre
 
@@ -9,6 +15,8 @@
     @extend %reset;
 }
 body {
+    max-height: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
     grid-template-columns: 1fr;
