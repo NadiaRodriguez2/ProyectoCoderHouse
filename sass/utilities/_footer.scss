@@ -1,23 +1,18 @@
 @import "variables";
 @import "reset";
    
-    .footer {
-        font-size: 80%;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        color: white;
-        background-color: $bg-color;
         .footercode4 {
-            grid-area: footer;
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 2fr 2fr 2fr;
             grid-template-areas: "derReserv" "redes" "info";
+            background-color: $bg-color;
             .derReserv {
                 grid-area: derReserv;
                 display: flex;   
                 justify-content: flex-start;
                 align-items: flex-end;
+                @extend %foot-font;
             }
             .redes{
                 grid-area: redes;
@@ -26,6 +21,7 @@
                 align-items: center;
                 justify-content: space-around;
                 flex-wrap: wrap;
+                @extend %foot-font;
                 .logoRrss {
                     height: 45px;
                     width: 45px;
@@ -37,6 +33,7 @@
                 justify-content: flex-end;
                 align-items: center;
                 flex-direction: column;
+                @extend %foot-font;
                 .infofoot {
                     display: flex;
                     flex-direction: row;
@@ -48,4 +45,4 @@
                 }
             }
         }
-    }
+    
