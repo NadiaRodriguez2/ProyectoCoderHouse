@@ -32,10 +32,12 @@
             align-items: center;
             list-style: none;
             margin-top: 10%;
+            
                 li {
                     display: flex;
                     flex-wrap: wrap;
                     a{
+                        display: flex;
                         list-style: none;
                         font-family: $font-fam;
                         font-size: 150%;
@@ -43,6 +45,7 @@
                         box-shadow: 2px 2px 5px;
                         text-decoration:none;
                         color: white;
+                        flex-wrap: wrap;
                     }
                 }
             }

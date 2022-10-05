@@ -94,13 +94,15 @@ p {
       display: flex;
       flex-wrap: wrap; }
       .headerCode4 nav ul li a {
+        display: flex;
         list-style: none;
         font-family: "Roboto", serif;
         font-size: 150%;
         column-gap: 5%;
         box-shadow: 2px 2px 5px;
         text-decoration: none;
-        color: white; }
+        color: white;
+        flex-wrap: wrap; }
 
 h1 {
   font-size: 500%;
@@ -191,11 +193,14 @@ p {
     width: 100%; }
 
 .mainCode {
-  margin: 20px;
+  margin-right: 10%;
+  margin-right: 10%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   align-items: center; }
+  .mainCode .codeEquipo:hover {
+    transform: scale(1, 1); }
 
 /*agrosoft*/
 .subheaderAgrosoft {
@@ -206,7 +211,8 @@ p {
     width: 100%; }
 
 .mainAgro {
-  margin: 20px;
+  margin-right: 3%;
+  margin-left: 3%;
   display: grid;
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 100%;
@@ -231,11 +237,14 @@ p {
     width: 100%; }
 
 .mainUtec {
-  margin: 20px;
+  margin-right: 10%;
+  margin-left: 5%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   align-items: center; }
+  .mainUtec .imgUtec:hover {
+    transform: scale(1.2, 1.2); }
 
 /*contacto*/
 .subheaderContacto {
@@ -246,7 +255,8 @@ p {
     width: 100%; }
 
 .mainContacto {
-  margin: 20px;
+  margin-right: 10%;
+  margin-right: 10%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
