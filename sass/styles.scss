@@ -5,8 +5,7 @@
 @import "utilities/header";
 @import "utilities/footer";
 
-
-/*fuentes*/
+    /*fuentes*/
 h1 {
     @extend %h1-font;
 }
@@ -19,6 +18,9 @@ h3 {
 p {
     @extend %p-font;
 }
+
+main {
+    grid-area: main;
 
 /*index*/
 .indexCarousel{
@@ -48,7 +50,7 @@ p {
     grid-template-rows: 100%;
     align-items: center;
     .codeEquipo:hover {
-        transform: scale(1,1);
+        transform: scale(1.2,1.2);
     }
 }
 
@@ -115,7 +117,7 @@ p {
 }
 .mainContacto {
     margin-right: 10%;
-    margin-right: 10%;
+    margin-left: 10%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
@@ -127,8 +129,4 @@ p {
     font-size: 27px;
     padding: 10px;
 }
-
-.bigicon {
-    font-size: 35px;
-    color: red;
 }

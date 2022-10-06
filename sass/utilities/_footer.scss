@@ -1,17 +1,18 @@
 @import "variables";
 @import "reset";
 
-   
         .footercode4 {
+            margin-top: 10%;
             display: grid;
-            grid-template-rows: 1fr;
+            grid-template-rows: 30%;
             grid-template-columns: 35% 30% 35%;
             background-color: $bg-color;
+            @extend %foot-font;
             .derReserv {
                 display: flex;   
                 justify-content: flex-start;
                 align-items: flex-end;
-                @extend %foot-font;
+                
             }
             .redes{
                 display: flex;
@@ -19,10 +20,12 @@
                 align-items: center;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                @extend %foot-font;
                 .logoRrss {
                     height: 45px;
                     width: 45px;
+                    .logoRrss:hover {
+                        transform: scale(1.2,1.2);
+                    }
                 }
             }
             .info {
@@ -30,7 +33,6 @@
                 justify-content: flex-end;
                 align-items: center;
                 flex-direction: column;
-                @extend %foot-font;
                 .infofoot {
                     display: flex;
                     flex-direction: row;
