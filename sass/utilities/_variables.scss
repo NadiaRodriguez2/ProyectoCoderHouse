@@ -1,9 +1,13 @@
 $bg-color: #d80016;
 $font-fam: 'Roboto', serif;
-%reset { margin: 0; padding: 0; box-sizing: border-box; }
+//%reset { margin: 0; padding: 0; box-sizing: border-box; }
 //Letras
-%h1-font{ font-size: 500%; font-family: $font-fam;  color: white; font-weight: bold; margin-left: 2%;}
+%h1-font{ font-size: 500%; font-family: $font-fam;  color: white; font-weight: bold; margin-left: 2%; text-align: center;}
 %h2-font{ font-size: 200%; font-family: $font-fam; text-align: center; font-weight: bold;}
 %h3-font{ font-size: 170%; font-family: $font-fam; font-weight: bold;}
 %p-font{ font-size: 120%; font-family: $font-fam;}
+%foot-font {font-size: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;}
 
